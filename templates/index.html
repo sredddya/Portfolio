@@ -1,0 +1,98 @@
+{% extends "base.html" %}
+
+{% block title %}Home - Sai Kiran Reddy{% endblock %}
+
+{% block content %}
+<div class="row profile-card">
+  <div class="col-md-3 text-center">
+    <img src="{{ url_for('static', filename='profile.jpg') }}" alt="Profile Picture" class="profile-pic mb-3">
+  </div>
+  <div class="col-md-6">
+    <h3><strong>Sai Kiran Reddy</strong></h3>
+    <p class="text-muted">Software Engineer</p>
+    <div class="row">
+      <div class="col-6">
+        <p><i class="fa fa-home icon"></i> <a href="#">Dataislife</a></p>
+        <p><i class="fa fa-phone icon"></i> +1(412) 451-5660</p>
+        <p><i class="fa fa-envelope icon"></i> Kirande2097@gmail.com</p>
+      </div>
+      <div class="col-6">
+        <p>
+            <i class="fab fa-twitter icon"></i>
+            <a href="https://www.instagram.com/kirran_reddi/" target="_blank">Twitter</a>
+          </p>
+          <p>
+            <i class="fab fa-linkedin icon"></i>
+            <a href="https://www.linkedin.com/in/sai-kiran-reddyoptum/" target="_blank">LinkedIn</a>
+          </p>
+          <p>
+            <i class="fab fa-github icon"></i>
+            <a href="https://github.com/your_username" target="_blank">GitHub</a>
+          </p>
+          
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 d-flex align-items-start justify-content-end flex-column">
+    <div class="dropdown">
+        <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="shareMenuButton" data-bs-toggle="dropdown" aria-expanded="false">
+          <i class="fa fa-share"></i> Share
+        </button>
+        <ul class="dropdown-menu" aria-labelledby="shareMenuButton">
+          <li><a class="dropdown-item" href="https://linkedin.com/in/sai-kiran-reddyoptum/" target="_blank"><i class="fab fa-linkedin me-2"></i>LinkedIn</a></li>
+          <li><a class="dropdown-item" href="https://twitter.com/" target="_blank"><i class="fab fa-twitter me-2"></i>Twitter</a></li>
+          <li><a class="dropdown-item" href="https://github.com/" target="_blank"><i class="fab fa-github me-2"></i>GitHub</a></li>
+          <li><a class="dropdown-item" href="mailto:Kirande2097@gmail.com"><i class="fa fa-envelope me-2"></i>Email</a></li>
+        </ul>
+      </div>      
+      <a href="{{ url_for('static', filename='resume.pdf') }}" download class="btn btn-download" title="Download my resume">
+        <i class="fa fa-download"></i> Download
+      </a>      
+  </div>
+</div>
+
+<!-- Personal Statement -->
+<div class="row mt-4">
+    <div class="col-md-6">
+      <h5><i class="fa fa-user icon"></i> PERSONAL STATEMENT</h5>
+      <p>
+        Results-driven Data Engineer with 5+ years of experience in building scalable ETL pipelines and real-time data solutions.
+        Skilled in Apache Spark, Kafka, Flink, and Airflow for big data processing and orchestration.
+        Proficient in AWS and Azure cloud platforms, including Redshift, Glue, S3, ADF, and Databricks.
+        Expert in Snowflake, SQL/NoSQL databases, and data lake/warehouse migrations.
+        Strong in Python, Scala, and SQL with a focus on performance optimization and automation.
+      </p>
+    </div>
+  
+    <!-- Technical Skills -->
+    <div class="col-md-6">
+      <h5><i class="fa fa-cogs icon"></i> TECHNICAL SKILLS</h5>
+  
+      <p>Python / Scala</p>
+      <div class="progress mb-2">
+        <div class="progress-bar bg-success" style="width: 90%;">90%</div>
+      </div>
+  
+      <p>Spark / Kafka / Flink</p>
+      <div class="progress mb-2">
+        <div class="progress-bar bg-success" style="width: 85%;">85%</div>
+      </div>
+  
+      <p>Snowflake / Redshift</p>
+      <div class="progress mb-2">
+        <div class="progress-bar bg-success" style="width: 80%;">80%</div>
+      </div>
+  
+      <p>Airflow / Glue</p>
+      <div class="progress mb-2">
+        <div class="progress-bar bg-success" style="width: 75%;">75%</div>
+      </div>
+  
+      <p>Azure / AWS</p>
+      <div class="progress mb-2">
+        <div class="progress-bar bg-success" style="width: 80%;">80%</div>
+      </div>
+    </div>
+  </div>
+  
+{% endblock %}
